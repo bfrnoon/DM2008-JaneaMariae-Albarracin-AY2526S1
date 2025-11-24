@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p5.js Starter Template</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/helper.js"></script>
+    <script src="js/p5.min.js"></script>
+    <script src="js/p5.sound.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <script src="lists.js"></script>
+    <script src="sketch.js"></script>
+    <!-- Add any additional js files below this -->
+
+    <div id="welcomePage" style="text-align: center;">
+      <h1 style="color: rgb(240, 26, 183); text-align: left;">the very very offical ic application form!</h1><br>
+      <h2 style="color: rgb(240, 26, 183); text-align: center;">plsplspls press "space" to fill in your credentials.</h2>
+    </div>
+
+    <div id="formDiv">
+      <form>
+        <label for="name">please select your name below:</label>
+          <br>
+         <select id="name" name="name" style="font-size:50px;">
+          <option value="alexandra">ALEXANDRA ALIANA KOH JIA EN</option>
+          <option value="qirui">CHEN QIRUI</option>
+          <option value="colleen">COLLEEN CHIA SIYU</option>
+          <option value="emilie">EMILIE KRESTIANTO</option>
+          <option value="evania">EVANIA RAHMA FERNANDA</option>
+          <option value="sue">HO SUE TYNE</option>
+          <option value="zhiqi">HOW ZHI QI (HU ZHIQI)</option>
+          <option value="janea">JANEA MARIAE GAMOROT ALBARRACIN</option>
+          <option value="jaslyn">JASLYN CHEN WEN HUEI</option>
+          <option value="victoria">LIANG EN LING, VICTORIA</option>
+          <option value="jiaqi">LI JIAQI</option>
+          <option value="jiaye">LU JIAYE</option>
+          <option value="nadya">NADYA ZAFYRA BINTE MOHAMAD FAIZAL</option>
+          <option value="dhanusha">S DHANUSHA</option>
+          <option value="kavipooja">SELVAKUMAR KAVIPOOJA</option>
+          <option value="luke">TAN LUKE</option>
+          <option value="ty">TY NEO YI-XIN</option>
+          <option value="joseph">JOSEPH CHEE</option>
+          <option value="kapi">KAPILAN NAIDU</option>
+  
+        </select>
+  
+        <br>
+        <br>
+  
+        <label for="name">what are your pronouns?</label><br>
+        
+        <input type="radio" id="pronoun" name="pronoun" value="he/him" checked>
+        <label for="hehim">he/him</label><br>
+  
+        <input type="radio" id="pronoun" name="pronoun" value="she/her">
+        <label for="sheher">she/her</label><br>
+        
+        <input type="radio" id="pronoun" name="pronoun" value="they/them">
+        <label for="theythem">they/them</label><br>
+        <br>
+  
+        <label for="age">year of birth:</label><br>
+        <div class="slidecontainer">
+          <input type="range" min="1970" max="2020" value="50" class="slider" id="myRange" name="age">
+          <p id="demo"></p>
+        </div>
+  
+        <br>
+  
+        <label for="name">what is your race?</label><br>
+        
+        <input type="radio" id="rChinese" name="race" value="chinese" checked>
+        <label for="chinese">im chinese!</label><br>
+  
+        <input type="radio" id="rMalay" name="race" value="malay">
+        <label for="malay">im malay!</label><br>
+        
+        <input type="radio" id="rIndian" name="race" value="indian">
+        <label for="indian">im indian!</label><br>
+
+        <input type="radio" id="rOthers" name="race" value="others">
+        <label for="others">im the rest of the population...</label><br>
+        <br>
+
+
+
+        <label for="sideofsg">which side of singapore do you reside in?</label><br>
+        
+        <input type="radio" id="north" name="sideofsg" value="north" checked>
+        <label for="north">northie!</label><br>
+  
+        <input type="radio" id="south" name="sideofsg" value="south">
+        <label for="south">southie!</label><br>
+        
+        <input type="radio" id="east" name="sideofsg" value="east">
+        <label for="east">eastie!</label><br>
+
+        <input type="radio" id="west" name="sideofsg" value="west">
+        <label for="west">westie!</label><br>
+        <br>
+
+        <br>
+        <label for="hfood">what is your go to hawker meal?</label>
+          <br>
+         <select id="hfood" name="hfood" style="font-size:50px;">
+          <option value="CR">chicken rice</option>
+          <option value="CF">cai fan</option>
+          <option value="Western">western</option>
+          <option value="NP">nasi padang</option>
+          <option value="BM">ban mee/ban mian</option>
+          <option value="Indian">indian</option>
+          <option value="YTF">ytf (yong tau foo)</option>
+          <option value="Mala">mala</option>
+
+         </select>
+         <br>
+
+         <br>
+
+         <label for="name">if you were an animal, would you be a herbivore or a carnivore?</label><br>
+        
+         <input type="radio" id="herbcar" name="herbcar" value="herbcar" checked>
+         <label for="herbcar">herbivore!</label><br>
+ 
+         <input type="radio" id="carvi" name="herbcar" value="carvi">
+         <label for="carvi">carnivore!</label><br>
+         <br>
+
+
+         
+         <br>
+
+        <label for="runbus">if someone were to pick a fight with you, how likely would you throw a punch? (left = least likely, right + most likely)</label><br>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myFight" name="fight">
+          <p style="float: left;">im a pussy</p> 
+          <p style="float: right;">i will win.</p>
+    
+          <br>
+          <p id="demo"></p>
+        </div>
+        <br>
+
+        <br>
+        <label for="name">would you let someone lick your toes or you lick someones toes?</label><br>
+        
+        <input type="radio" id="qGivefeet" name="toesqn" value="licktoe" checked>
+        <label for="licktoe">give me them feet!</label><br>
+
+        <input type="radio" id="qFeetgive" name="toesqn" value="toelick">
+        <label for="toelick">heres my feet!</label><br>
+        <br>
+        
+
+        <br>
+        <label for="name">if you had to lose your hands or your feet, which would you choose?</label><br>
+        
+        <input type="radio" id="qFeet" name="ftqns" value="feet" checked>
+        <label for="feet">my feet</label><br>
+
+        <input type="radio" id="qHands" name="ftqns" value="hands">
+        <label for="hands">my hands</label><br>
+        <br>
+ 
+
+        <br>
+        <label for="name">what music would you like to be played at your funeral?</label><br>
+        
+        <input type="radio" id="musicqn" name="musicqn" value="rockmus" checked>
+        <label for="rockmus">rock music.</label><br>
+
+        <input type="radio" id="musicqn" name="musicqn" value="hyperpop">
+        <label for="hyperpop">hyper pop</label><br>
+
+        <input type="radio" id="musicqn" name="musicqn" value="popmus">
+        <label for="popmus">top 50 spotify</label><br>
+
+
+        <input type="radio" id="musicqn" name="musicqn" value="heavymetal">
+        <label for="heavymetal">heavy metal</label><br>
+        <br> 
+
+
+      </form>
+      <br>
+    </div>
+
+    <div id="contentIC">
+      <font-family: "Pixelify Sans", sans-serif: ></font-family>
+      <h1 style="color: rgb(240, 26, 183); text-align: left;">your ic is ready for collection!!!! XD!!!</h1>
+    </div>
+    
+    <div id="collectionIC">
+      <font-family: "Pixelify Sans", sans-serif: ></font-family>
+      <h1 style="color: rgb(240, 26, 183); text-align: right;">press 's' to collect your ic!</h1>
+
+    </div>
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value; // Display the default slider value
+
+      // Update the current slider value (each time you drag the slider handle)
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+
+    </script>
+  </body>
+</html>
